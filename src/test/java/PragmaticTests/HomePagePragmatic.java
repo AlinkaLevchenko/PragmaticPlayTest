@@ -53,7 +53,7 @@ public class HomePagePragmatic extends BasePage {
     }
 
     public WebElement goTo() {
-        return waitElementToBeClickable("//div[@class=right-arrow slick-arrow]");
+        return moveToWithExplicitWait("//div[@class='right-arrow slick-arrow']");
     }
 
     public List<WebElement> slidesActive() {

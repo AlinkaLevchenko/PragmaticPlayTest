@@ -1,7 +1,6 @@
 package PragmaticTests;
 
 import PageObject.TestInit;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -47,9 +46,7 @@ public class TestsPragmatic extends TestInit {
             for (int i = 0; i < homePagePragmatic.slidesActive().size(); i++)
                 result.add(homePagePragmatic.slidesActive().get(i).getText());
             for (int h = 0; h < homePagePragmatic.slidesActive().size(); h++) {
-                Actions actions = new Actions(driver);
-                actions.moveToElement(homePagePragmatic.goTo());
-                sleep(2);
+                sleep(1);
                 homePagePragmatic.goTo().click();
             }
         }
